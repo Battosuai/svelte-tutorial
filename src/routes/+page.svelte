@@ -1,18 +1,20 @@
-<script lang='ts'>
+<script lang="ts">
 	import Nested from "../components/Nested.svelte";
+	import NestedTwo from "../components/NestedTwo.svelte";
 
 	let name = "asif";
-	let src = 'https://placehold.co/600x400'
+	let src = "https://placehold.co/600x400";
 </script>
 
 <h1>Welcome to Svelte, {name}</h1>
 <h2>Manipulation: {name.toUpperCase()}</h2>
 
-<br>
+<br />
 
-<img {src} alt="{name} dances"/>
+<img {src} alt="{name} dances" />
 
 <Nested />
 
 <p>Test</p>
 
+<NestedTwo />
